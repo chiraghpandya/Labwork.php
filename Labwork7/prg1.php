@@ -6,8 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = htmlspecialchars($_POST['password']);
 
     // Dummy credentials for demo
-    $validUser = "admin";
-    $validPass = "1234";
+    $validUser = "chirag";
+    $validPass = "0007";
 
     if ($username === $validUser && $password === $validPass) {
         $_SESSION['loggedin'] = true;
@@ -22,3 +22,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     Password: <input type="password" name="password" required><br>
     <input type="submit" value="Login">
 </form>
+
